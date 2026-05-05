@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="icon" type="image/png" href="favicon-32x32.png">
+<title>Valkoisena</title>
+
+<style>
+/* CSS Variables */
+    
+:root {
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+}
+
+body {
+  background: #fff;
+  margin: 30px 50px;
+  /*line-height: 0;*/
+}
+
+.btn {
+  background: var(--dark);
+  color: var(--light);
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 29px;
+}
+
+/* Navigation */
+.main-nav ul {
+  display: grid;
+  grid-gap: 15px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.main-nav a {
+  background: var(--primary);
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  color: var(--dark);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  box-shadow: var(--shadow);
+}
+
+.main-nav a:hover {
+  background: var(--dark);
+  color: var(--light);
+}
+
+/* Top Container */
+.top-container {
+/*  display: grid; */
+  grid-gap: 20px;
+ /* grid-template-areas:
+    'showcase showcase top-box-a'
+    'showcase showcase top-box-b'; */
+}
+
+.showcase {
+  grid-area: showcase;
+  min-height: 420px;
+  background: url(Anya-j.png);
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  
+}
+
+.showcase h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+  color: var(--light);
+}
+
+.showcase p {
+  font-size: 1.3rem;
+  margin-top: 0;
+  color: var(--light);
+}
+
+/* Top Box */
+.top-box {
+  background: var(--primary);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+}
+
+.top-box .price {
+  font-size: 2.5rem;
+}
+
+.top-box-a {
+  grid-area: top-box-a;
+}
+
+.top-box-b {
+  grid-area: top-box-b;
+}
+
+    
+/* Boxes */
+.boxes {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: auto auto auto;
+}
+
+.box {  
+  text-align: center;
+  padding: 0rem 0rem;
+}
+    
+.box > a > img {
+  border-radius: 10px;    
+  width: 100%;
+ /*object-fit: cover; */
+   
+}
+
+/* Info */
+.info {
+  background: var(--primary);
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem;
+}
+
+/* Portfolio */
+.portfolio {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.portfolio img {
+  width: 100%;
+  box-shadow: var(--shadow);
+}
+
+    
+/* Footer */
+footer {
+  margin-top: 2rem;
+  background: var(--dark);
+  color: var(--light);
+  text-align: center;
+  padding: 1rem;
+}
+
+
+    
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (max-width: 320px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (max-width: 320px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (max-width: 320px),
+only screen and (        min-device-pixel-ratio: 2)      and (max-width: 320px),
+only screen and (                min-resolution: 192dpi) and (max-width: 320px),
+only screen and (                min-resolution: 2dppx)  and (max-width: 320px) { 
+   
+.top-container {
+   grid-template-areas:
+    'showcase showcase'
+    'top-box-a top-box-b';
+  }
+
+  .showcase h1 {
+    font-size: 2.5rem;
+  }
+
+  .main-nav ul {
+    grid-template-columns: 1fr;
+  }
+
+  .info {
+    grid-template-columns: 1fr;
+  }
+
+  .info .btn {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+    
+  .boxes {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+    
+}
+ </style>
+</head>
+
+<body>
+<div class="wrapper">
+   
+   
+<!-- Navigation -->
+<nav class="main-nav"></nav>
+
+      
+<!-- Top Container -->
+<section class="top-container">
+
+
+<header class="showcase">
+
+</header>
+    
+    </section>
+
+    <!-- Boxes Section -->
+    <section class="boxes">
+     
+      <div class="box">
+      <a style="cursor: pointer" onclick="javascript:window.location='New-Birds.zip';">
+      <img src="arab-strap-aidan.png" alt="Aidan"></a>
+      </div>
+      
+      <div class="box">
+      <a style="cursor: pointer" onclick="javascript:window.location='Luau.zip';">
+      <img src="reis-jehu.png" alt="Reis"></a>
+      </div>
+      
+      <div class="box">
+      <a style="cursor: pointer" onclick="javascript:window.location='Spider-Hole.zip';">
+      <img src="bill-woods.png" alt="Billy"></a>
+      </div>
+      
+      <div class="box">
+      <a style="cursor: pointer" onclick="javascript:window.location='New-Year\'s-Kiss.zip';">
+      <img src="caster.png" alt="Owen"></a>  
+      </div>
+       
+      <div class="box">
+      <a style="cursor: pointer" onclick="javascript:window.location='Never-Clean-My-Room.zip';">
+      <img src="swain-end.png" alt="Swain"></a>
+       
+      </div> 
+           
+      <div class="box">
+      <a style="cursor: pointer" onclick="javascript:window.location='The-Bright-Light.zip';">
+      <img src="tanya-donelly.png" alt="Tanya"></a> 
+      </div>  
+      
+      <div class="box">
+      <a style="cursor: pointer" onclick="javascript:window.location='The-Bright-Light.zip';">
+      <img src="spare/" alt="Tanya"></a> 
+      </div> 
+      
+       
+    </section>
+ 
+    <!-- Footer -->
+  
+
+  </div>
+  <!-- Wrapper Ends -->
+</body>
+</html>
