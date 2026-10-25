@@ -100,7 +100,7 @@ ul {
 }
 
 .top-slide {
-   background: url(neon_wolf-copy-.png);
+   background-image: url('../graphics/neon_wolf.png');
    width: 100%;
    padding-top: 88px;
    padding-bottom: 65px;
@@ -459,7 +459,7 @@ p {
 @media screen and (max-width: 1365px) {
 
    .top-slide {
-      background: url(neon_wolf-across.png);
+      background-image: url('../graphics/neon_wolf-mobile.png');
       animation: fadeIn 0.4s ease-in-out;
    }
 
