@@ -1,34 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
 :root {
 
-/* Primitive Neutrals */
---color-primary: #fff;
---color-secondary: #000;
+   /* Primitive Neutrals */
+   --color-primary: #fff;
+   --color-secondary: #d20410;
+   --color-tertiary: #000;
+   --color-quaternary: #040135;
 
-/* Background */
---bg-p: #2a2a2e;
---bg-h2: #fde900;
+   /* Background */
+   --bg-p: #2a2a2e;
+   --bg-h2: #fde900;
 
-/* Bottom Card */
---class-bc-red: #ff3800;
---class-bc-blue: #000308;
+   /* Bottom Card */
+   --class-bc-red: #ff3800;
+   --class-bc-blue: #000108;
 
-/* H4 */
---h4-blue: #020012;
---h4-red: #ff1400;
+   /* H4 */
+   --h4-blue: #020012;
+   --h4-red: #d20410;
 
-/* Portfolio, Header-Container, About-Us */
---class-port-toggles-gray: #424146;
---class-head-container-orange: #e97c06;
---class-about-us-yellow: #ffea00;
+   /* Portfolio, Header-Container, About-Us */
+   --class-port-toggles-gray: #424146;
+   --class-head-container-orange: #e97c06;
+   --class-about-us-orange: #ff5100;
 
-/* Footer */
---footer-bg-gray: #26262b;
+   /* Footer */
+   --footer-bg-gray: #020614;
 }
 
 
 * {
    padding: 0;
-   margin: 0; 
+   margin: 0;
 }
 
 body {
@@ -46,6 +50,12 @@ div.logo {
    height: 120px;
    margin-bottom: 40px;
 }
+
+.topcard img {
+   width: 100%;
+   max-width: 500px;
+}
+
 
 .logo {
 
@@ -67,7 +77,7 @@ div.logo {
 .header-container {
 
    a {
-      color: var(--color-secondary);
+      color: var(--color-tertiary);
       font-size: 19px;
       margin-right: 63px;
       padding: 27px 6px;
@@ -81,9 +91,9 @@ div.logo {
       margin-bottom: 15px;
    }
 
-        aside {
-           padding-bottom: 20px;
-        }
+   aside {
+      padding-bottom: 20px;
+   }
 }
 
 
@@ -100,14 +110,20 @@ ul {
 }
 
 .top-slide {
-   background-image: url('../graphics/neon_wolf.png');
+   background: url(neon_wolf.png);
    width: 100%;
+   height: auto;
+   max-width: none;
+   display: block;
    padding-top: 88px;
    padding-bottom: 65px;
    -webkit-transform: scale(1);
    image-rendering: crisp-edges;
    opacity: 1;
    animation: fadeInOut 4s ease-in-out infinite;
+
+
+
 }
 
 .top-slide {
@@ -159,6 +175,7 @@ ul {
    h3 {
       font-size: 35px;
       margin-top: 90px;
+
    }
 
 }
@@ -176,26 +193,49 @@ ul {
 .first-p {
    font-size: 20px;
    color: var(--color-primary);
+   font-family: "Crimson Pro", serif;
+   font-optical-sizing: auto;
+   font-style: normal;
 }
 
+
 .bottom-card {
+
    background: var(--class-bc-blue);
    position: relative;
-   border-top: 3px solid var(--class-bc-red);
+   border-top: 0.25px solid var(--class-bc-red);
    transform: translateY(-30px);
    padding-top: 2px;
-   border-radius: 0 15px 15px 15px;
+   border-radius: 1px 1px 1px 1px;
+   padding-left: 20px;
+   padding-right: 20px;
    padding-bottom: 2px;
    margin-left: clamp(4px, 5vw, 10%);
    margin-right: clamp(4px, 5vw, 10%);
+   max-width: 500px;
+
 }
+
+.bottom-card .first-p {
+
+   font-size: 150%;
+
+}
+
 
 .specialize-cards {
    display: flex;
-   justify-content: space-between;
+   /* justify-content: space-between; */
    margin-top: unset;
    container-type: inline-size;
    width: 100%;
+
+   /* flex-wrap: wrap; */
+   justify-content: center;
+   align-items: center;
+
+
+
 }
 
 .specialize-cards {
@@ -221,12 +261,13 @@ ul {
    h4 {
       background: var(--h4-blue);
       padding: 10px 8px;
-      font-size: 18px;
+      font-size: 17px;
       border-radius: 5px;
       display: inline-block;
       color: var(--h4-red);
       margin-bottom: 30px;
    }
+
 
    p {
       color: var(--class-port-toggles-gray);
@@ -242,7 +283,7 @@ ul {
       color: var(--class-port-toggles-gray);
       cursor: pointer;
       font-size: 16px;
-      margin: 20px 5px;
+      margin: 20px 25px;
       border: none;
       outline: none;
 
@@ -347,24 +388,34 @@ li {
 footer {
    background: var(--footer-bg-gray);
    padding: 30px 0;
+   line-height: 28px;
    color: var(--color-primary);
+   font-size: 18px;
+   font-family: "Crimson Pro", serif;
+   font-optical-sizing: auto;
+   font-weight: 500;
+   font-style: normal;
 }
 
 footer {
 
    h4 {
 
-      font-size: 18px;
+      font-size: 21px;
 
    }
 }
 
 
 .footer-container {
-   width: 90%;
+   max-width: 1200px;
+   width: 70%;
    margin: 0 auto;
    display: grid;
    grid-template-columns: 1.5fr 1.5fr 1fr;
+   gap: 20px;
+   justify-content: center;
+   justify-items: flex-start;
 }
 
 
@@ -378,7 +429,7 @@ footer {
       padding: 15px;
       margin-top: 30px;
       margin-bottom: 40px;
-      border-bottom: 2px solid var(--class-about-us-yellow);
+      border-bottom: 2px solid var(--class-about-us-orange);
       display: inline-block;
 
    }
@@ -400,8 +451,8 @@ footer {
    .about-us {
 
       a {
-         background: var(--color-secondary);
-         border-bottom: 2px solid var(--class-about-us-yellow);
+         background: var(--color-quaternary);
+         border-bottom: 1.5px solid var(--class-about-us-orange);
          color: var(--color-primary);
          font-size: 15px;
          padding: 15px;
@@ -447,11 +498,11 @@ p {
 
    }
 
-       .weet {
-   
-          margin-top: 5px;
-   
-      }
+   .weet {
+
+      margin-top: 5px;
+
+   }
 
 }
 
@@ -459,8 +510,9 @@ p {
 @media screen and (max-width: 1365px) {
 
    .top-slide {
-      background-image: url('../graphics/neon_wolf-mobile.png');
+      background: url("neon_wolf-mobile.png");
       animation: fadeIn 0.4s ease-in-out;
+
    }
 
 
@@ -509,7 +561,7 @@ p {
       text-align: center;
       display: block;
       cursor: pointer;
-      color: var(--color-secondary);
+      color: var(--color-tertiary);
    }
 
 
@@ -591,7 +643,7 @@ p {
       a {
          margin-right: -40px;
          padding: 27px 1px;
-         color: var(--color-secondary);
+         color: var(--color-tertiary);
       }
 
    }
@@ -624,11 +676,14 @@ p {
       position: relative;
       transform: translateY(-72px) !important;
       padding-top: 30px;
-      border-radius: 15px;
+      border-radius: 1px;
       padding-bottom: 2px;
       margin-left: clamp(4px, 8vw, 10%);
       margin-right: clamp(4px, 9vw, 10%);
    }
+
+
+
 
 
 
