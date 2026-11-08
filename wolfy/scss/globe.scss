@@ -672,16 +672,21 @@ p {
    }
 
 
-   .bottom-card {
-      margin: 5px 40px;
-      position: relative;
-      transform: translateY(-72px) !important;
-      padding-top: 30px;
-      border-radius: 1px;
-      padding-bottom: 2px;
-      margin-left: clamp(4px, 8vw, 10%);
-      margin-right: clamp(4px, 9vw, 10%);
-   }
+       .topcard {
+          display: inline-block;
+          position: relative;
+          max-width: 1200px;
+          width: 50%;
+   
+       }
+   
+   
+       .bottom-card {
+          top: 100%;
+          left: 0%;
+          /* transform: translate(-50%, -50%); */
+          max-width: 1200px;
+       }
 
 
 
