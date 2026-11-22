@@ -110,9 +110,9 @@ body {
   margin-left: 0;
 }
 
-/* .b .p .t .d */
+/* hero */
 .hero {
-  background-image: url(../images/banner.png);
+  background-image: url(../../images/neon_wolf.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -169,7 +169,7 @@ body {
   width: 90%;
   max-width: 600px;
   margin-inline: auto;
-  background-image: url(../images/ornate_sign_red.png);
+  background-image: url(../../images/ornate_sign_red.png);
   background-position: center center;
   text-decoration: none;
   padding: 29px 59px;
@@ -213,7 +213,7 @@ body {
   width: 90%;
   max-width: 600px;
   margin-inline: auto;
-  background-image: url(../images/ornate_sign_gold.png);
+  background-image: url(../../images/ornate_sign_gold.png);
   background-position: center center;
   text-decoration: none;
   padding: 29px 59px;
@@ -253,7 +253,7 @@ body {
 .h2::after {
   content: "";
   position: absolute;
-  background-image: url(../images/swirl_red.png);
+  background-image: url(../../images/swirl_red.png);
   display: block;
   width: 102px;
   height: 28px;
@@ -413,7 +413,7 @@ h1 {
   border-right: none;
 }
 
-/* .R  i .f */
+/* footer */
 img.logo {
   margin-top: -4px;
   width: clamp(100px, 11vw, 200px);
@@ -426,11 +426,11 @@ img.logo-footer {
 }
 
 footer {
-  background-image: url(../images/footer.png);
+  background-image: url(../../images/footer.png);
   padding: 60px 0 80px 0;
   color: var(--color-primary);
   text-transform: uppercase;
-  font: 20px;
+  font-size: 20px;
   font-family: "Roboto", sans-serif;
   text-align: center;
 }
@@ -638,7 +638,6 @@ main {
     padding-right: 0;
     padding-bottom: 0px;
     border-bottom: 1px solid var(--neutral-gray);
-    /*C*/
   }
   .box-item:last-child .box-text {
     border-bottom: none;
