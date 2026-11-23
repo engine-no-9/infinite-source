@@ -22,7 +22,7 @@
 
     /* Portfolio, Header-Container, About-Us */
     --class-port-toggles-gray: #424146;
-    --class-head-container-orange: #e97c06;
+    --class-head-container-orange: #D64000;
     --class-about-us-orange: #ff5100;
 
     /* Footer */
@@ -108,7 +108,7 @@ ul {
 }
 
 .top-slide {
-    background: url(../../images/neon_wolf.png);
+    background-image: url("../../images/neon_wolf.png");
     width: 100%;
     height: auto;
     max-width: none;
@@ -296,18 +296,19 @@ li {
         overflow: hidden;
 
 
-        &:focus {
+        &:focus,
+        &:hover {
             color: var(--class-head-container-orange);
             border-bottom-color: var(--class-head-container-orange);
             text-decoration: underline;
 
         }
 
+       
 
     }
 
 }
-
 
 
 #menu-checkbox {
@@ -514,7 +515,7 @@ p {
 @media screen and (max-width: 1070px) {
 
     .top-slide {
-        background: url(../../images/neon_wolf-mobile.png);
+        background-image: url("../../neon_wolf-mobile.png");
     }
 
     .header-container {
@@ -522,9 +523,6 @@ p {
         display: flex;
         justify-content: center;
     }
-
-
-
 
     .main-menu {
         display: none;
