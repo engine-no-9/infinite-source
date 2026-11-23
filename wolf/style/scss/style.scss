@@ -18,7 +18,7 @@
 
     /* H4 */
     --h4-blue: #020012;
-    --h4-red: #d20410;
+    --h4-red: #EB000C;
 
     /* Portfolio, Header-Container, About-Us */
     --class-port-toggles-gray: #424146;
@@ -108,7 +108,7 @@ ul {
 }
 
 .top-slide {
-    background-image: url("../../images/neon_wolf.png");
+    background: url(../../images/neon_wolf.png);
     width: 100%;
     height: auto;
     max-width: none;
@@ -154,7 +154,6 @@ ul {
 
     }
 }
-
 
 
 
@@ -259,16 +258,20 @@ ul {
 
 .toggles {
 
-    button {
+   ul li {
 
         border: none;
         color: var(--class-port-toggles-gray);
         cursor: pointer;
         font-size: 16px;
-        margin: 20px 25px;
+        margin: 20px 5px;
         border: none;
         outline: none;
 
+    }
+
+    ul li:nth-child(even) {
+        margin: 20px 25px;
     }
 }
 
@@ -304,11 +307,10 @@ li {
 
         }
 
-       
-
     }
 
 }
+
 
 
 #menu-checkbox {
@@ -354,12 +356,13 @@ li {
 }
 
 .post-after {
-    width: 90%;
+    // width: 90%;
     display: grid;
     margin: 0 auto;
     grid-template-rows: auto auto auto auto;
     justify-content: center;
     margin-bottom: 60px;
+    width: clamp(200px, 100vw, 1200px);
 }
 
 .posts {
@@ -414,7 +417,7 @@ footer {
         margin-bottom: 40px;
         border-bottom: 2px solid var(--class-about-us-orange);
         display: inline-block;
-
+        
     }
 }
 
@@ -429,18 +432,46 @@ footer {
 }
 
 
+
+.bold-hover:hover {
+    font-weight: bold;
+}
+
+.bold-hover::before {
+    display: block;
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+
+/* footer */
+
 .footer-container {
 
     .about-us {
 
         a {
             background: var(--color-quaternary);
-            border-bottom: 1.5px solid var(--class-about-us-orange);
+            // border-bottom: 1.5px solid var(--class-about-us-orange);
+            border: 2px solid transparent;
             color: var(--color-primary);
             font-size: 15px;
             padding: 15px;
             margin-top: 30px;
             margin-bottom: 40px;
+            display: inline-block;
+            border-bottom: 1px solid var(--class-about-us-orange);
+           
+
+            &:focus,
+                &:hover {
+                              
+                    border-bottom: 1px solid var(--color-primary);
+                    box-shadow: 0 -1px 0 0 var(--color-primary);
+          
+            }
 
         }
 
@@ -512,10 +543,40 @@ p {
 
 
 
+.toggles {
+    display: inline-block;
+    font-size: 0;
+}
+
+.toggles .bold-hover {
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.bold-hover:hover {
+    font-weight: 500;
+    text-decoration: underline;
+    
+}
+
+.bold-hover::before {
+    display: block;
+    font-weight: 600;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+
+
+/* media query - 1070px */
+
 @media screen and (max-width: 1070px) {
 
     .top-slide {
-        background-image: url("../../neon_wolf-mobile.png");
+        background: url("../../images/neon_wolf-mobile.png");
     }
 
     .header-container {
@@ -603,20 +664,23 @@ p {
     }
 
 
+
+/* header */
+
     .header-container {
 
         a {
 
+        &:focus,
             &:hover {
                 color: var(--class-head-container-orange);
-                text-underline-offset: 3px;
-
+                border-bottom-color: var(--class-head-container-orange);
+                text-decoration: underline;
+        
             }
-
         }
 
     }
-
 
     .header-container {
 
@@ -641,7 +705,6 @@ p {
         cursor: pointer;
         user-select: none;
         padding: 0 60px;
-
     }
 
     .toggle-button::before {
@@ -662,14 +725,12 @@ p {
 
     }
 
-
     .specialize-cards {
         width: 100%;
         display: block;
         margin-top: unset;
         container-type: inline-size;
     }
-
 
     .top-card {
         display: inline-block;
@@ -740,8 +801,9 @@ p {
 }
 
 
-@media screen and (min-width: 1024px) and (max-width: 1070px) {
+/* media query - 1024px / 1070px */
 
+@media screen and (min-width: 1024px) and (max-width: 1070px) {
 
     .bottom-card {
         transform: translateY(-72px);
