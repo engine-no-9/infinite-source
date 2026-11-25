@@ -4,333 +4,324 @@
 <head>
    <meta charset="UTF-8">
    <title>Pizza Time</title>
-    
-   <link href="https://fonts.googleapis.com/css?family=Montserrat: 400,700|Roboto:400,900&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="style/css/normalize.css">
-   <link rel="stylesheet" href="style/css/global.css">
 
+   <link rel="icon" href="favicon/favicon.ico" sizes="any">
+   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+
+   <link href="https://fonts.googleapis.com/css?family=Montserrat: 400,700|Roboto:400,900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/normal.css">
+   <link rel="stylesheet" href="css/global.css">
    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
 </head>
 
+
 <body>
-
-  <header>
-    <div class="wrapper">
-      <div class="navigation">
-        <img src="images/logo.png" alt="logo" class="logo">
-        <ul class="main-nav">
-          <li><a href="#">Newsletter</a></li>
-          <li><a href="#">Community</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </div>
+   
+<header>
+ <div class="wrapper">
+   <div class="navigation">
+    <img src="images/logo.png" alt="logo" class="logo">
+     <ul class="main-nav">
+       <li><a href="#">Newsletter</a></li>
+       <li><a href="#">Community</a></li>
+       <li><a href="#">Shop</a></li>
+       <li><a href="#">Contact Us</a></li>
+     </ul> 
     </div>
-  </header>
+   </div>
+  </header>   
+    
+    
+<div class="hero">
+  <div class="wrapper">
+   <h1 class="hero-title">Create Your Own Pizza</h1>
+    <p class="hero-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy since the 1500s</p>
+    <a class="btn" href="#">Read More</a>
+    <img class="hero-slice" src="images/pepperoni_slice.png" alt="Pepperoni pizza slice">
+  </div>
+ </div>    
 
 
-  <div class="hero">
-    <div class="wrapper">
-      <h1 class="hero-title">Create Your Own Pizza</h1>
-      <p class="hero-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-        has been the industry's standard dummy since the 1500s</p>
-      <a class="btn" href="#">Read More</a>
-      <img class="hero-slice" src="images/pepperoni_slice.png" alt="Pepperoni pizza slice">
+<main>
+ <div class="main-content-area__inner">
+  <div class="text-center">
+   <h2 class="h2">How to progress?</h2>
+  
+  </div>      
+  
+
+
+<div class="tabs">
+
+  <ul class="menu" role="tablist" aria-label="Menu Items">
+    <li role="tab" aria-selected="true" id="pizza_pies"><section class="tab-link active">PIZZA PIE</section></li>
+    <li role="tab" aria-selected="false" id="burgers"><section class="tab-link">BURGER</section></li>
+    <li role="tab" aria-selected="false" id="sandwiches"><section class="tab-link">SANDWICH</section></li>
+    <li role="tab" aria-selected="false" id="drinks"><section class="tab-link">DRINK</section></li>
+  </ul>
+  
+  
+  
+<div role="tabpanel" aria-labelledby="pizza_pies">
+
+  <div class="box">
+    
+    <!-- 1 -->
+    <section class="box-item">
+    
+      <p class="number number-one">1
+        <img class="menu_item_pizza" src="images/pizza_pie_split.png" alt="Illustration of a half of a pizza pie, with raised crust edges, a layer of melted cheese over a layer of tomato sauce.">
+      </p>
+
+      <div class="box-text">
+        <h3>CREATE IT</h3>
+        <p>Choose from a selection of tastilicious toppings to create your own pizza</p>
+      </div>
+
+    </section>
+
+
+    <!-- 2 -->
+    <section class="box-item">
+    
+      <p class="number number-two">2
+        <img class="menu_item_pizza" src="images/pizza_pie_split.png" alt="">
+      </p>
+
+      <div class="box-text">
+        <h3>NAME IT</h3>
+        <p>Choose from a selection of tastilicious toppings to create your own pizza</p>
+      </div>
+    
+    </section>
+
+
+    <!-- 3 -->
+    <section class="box-item">
+    
+      <p class="number number-three">3
+        <img class="menu_item_pizza" src="images/pizza_pie_split.png" alt="">
+      </p>
+    
+      <div class="box-text">
+        <h3>FAME IT</h3>
+        <p>Choose from a selection of tastilicious toppings to create your own pizza</p>
+      </div>
+    
+    </section>
+
+
+  </div>
+</div>
+
+
+  <div role="tabpanel" aria-labelledby="burgers" hidden>
+    <div class="box">
+    
+      <!-- 1 -->
+      <section class="box-item">
+    
+        <p class="number number-one">1
+          <img class="menu_item_burger" src="images/burger.png" alt="Illustration of a burger depicting two buns, encasing a leaf of lattuce and a beef patty.">
+        </p>
+    
+        <div class="box-text">
+          <h3>CREATE IT</h3>
+          <p>Choose from a selection of tastilicious toppings to create your own pizza</p>
+        </div>
+    
+      </section>
+    
+    
+      <!-- 2 -->
+      <section class="box-item">
+    
+        <p class="number number-two">2
+          <img class="menu_item_burger" src="images/burger.png" alt="">
+        </p>
+    
+        <div class="box-text">
+          <h3>NAME IT</h3>
+          <p>Choose from a selection of tastilicious toppings to create your own pizza</p>
+        </div>
+    
+      </section>
+    
+    
+      <!-- 3 -->
+      <section class="box-item">
+    
+        <p class="number number-three">3
+          <img class="menu_item_burger" src="images/burger.png" alt="">
+        </p>
+    
+        <div class="box-text">
+          <h3>FAME IT</h3>
+          <p>Choose from a selection of tastilicious toppings to create your own pizza</p>
+        </div>
+    
+      </section>
+    
+    
     </div>
   </div>
 
 
-  <main>
-    <div class="main-content-area__inner">
-      <div class="text-center">
-        <h2 class="h2">How to progress?</h2>
 
+
+  
+  <div role="tabpanel" aria-labelledby="sandwiches" hidden>
+  <div class="box">
+  
+    <!-- 1 -->
+    <section class="box-item">
+  
+      <p class="number number-one">1
+        <img class="menu_item_sandwich" src="images/chicken_sandwich.png" alt="Illustration of a grilled chicken sandwiche depicting two slices of baguette bread encasing a leaf of lattuce and a grilled chicken patty">
+      </p>
+  
+      <div class="box-text">
+        <h3>CREATE IT</h3>
+        <p>Choose from a selection of tastilicious toppings to create your own pizza</p>
       </div>
-
-
-
-      <div class="tabs">
-
-        <ul class="menu" role="tablist" aria-label="Menu Items">
-          <li role="tab" aria-selected="true" id="pizza_pies">
-            <section class="tab-link active">PIZZA PIE</section>
-          </li>
-          <li role="tab" aria-selected="false" id="burgers">
-            <section class="tab-link">BURGER</section>
-          </li>
-          <li role="tab" aria-selected="false" id="sandwiches">
-            <section class="tab-link">SANDWICH</section>
-          </li>
-          <li role="tab" aria-selected="false" id="drinks">
-            <section class="tab-link">DRINK</section>
-          </li>
-        </ul>
-
-
-
-        <div role="tabpanel" aria-labelledby="pizza_pies">
-
-          <div class="box">
-
-            <!-- 1 -->
-            <section class="box-item">
-
-              <p class="number number-one">1
-                <img class="menu_item_pizza" src="images/pizza_pie_split.png"
-                  alt="Illustration of a half of a pizza pie, with raised crust edges, a layer of melted cheese over a layer of tomato sauce.">
-              </p>
-
-              <div class="box-text">
-                <h3>CREATE IT</h3>
-                <p>Choose from a selection of tastilicious toppings to create your own pizza</p>
-              </div>
-
-            </section>
-
-
-            <!-- 2 -->
-            <section class="box-item">
-
-              <p class="number number-two">2
-                <img class="menu_item_pizza" src="images/pizza_pie_split.png" alt="">
-              </p>
-
-              <div class="box-text">
-                <h3>NAME IT</h3>
-                <p>Choose from a selection of tastilicious toppings to create your own pizza</p>
-              </div>
-
-            </section>
-
-
-            <!-- 3 -->
-            <section class="box-item">
-
-              <p class="number number-three">3
-                <img class="menu_item_pizza" src="images/pizza_pie_split.png" alt="">
-              </p>
-
-              <div class="box-text">
-                <h3>FAME IT</h3>
-                <p>Choose from a selection of tastilicious toppings to create your own pizza</p>
-              </div>
-
-            </section>
-
-
-          </div>
-        </div>
-
-
-        <div role="tabpanel" aria-labelledby="burgers" hidden>
-          <div class="box">
-
-            <!-- 1 -->
-            <section class="box-item">
-
-              <p class="number number-one">1
-                <img class="menu_item_burger" src="images/burger.png"
-                  alt="Illustration of a burger depicting two buns, encasing a leaf of lattuce and a beef patty.">
-              </p>
-
-              <div class="box-text">
-                <h3>CREATE IT</h3>
-                <p>Choose from a selection of tastilicious toppings to create your own pizza</p>
-              </div>
-
-            </section>
-
-
-            <!-- 2 -->
-            <section class="box-item">
-
-              <p class="number number-two">2
-                <img class="menu_item_burger" src="images/burger.png" alt="">
-              </p>
-
-              <div class="box-text">
-                <h3>NAME IT</h3>
-                <p>Choose from a selection of tastilicious toppings to create your own pizza</p>
-              </div>
-
-            </section>
-
-
-            <!-- 3 -->
-            <section class="box-item">
-
-              <p class="number number-three">3
-                <img class="menu_item_burger" src="images/burger.png" alt="">
-              </p>
-
-              <div class="box-text">
-                <h3>FAME IT</h3>
-                <p>Choose from a selection of tastilicious toppings to create your own pizza</p>
-              </div>
-
-            </section>
-
-
-          </div>
-        </div>
-
-
-
-
-
-        <div role="tabpanel" aria-labelledby="sandwiches" hidden>
-          <div class="box">
-
-            <!-- 1 -->
-            <section class="box-item">
-
-              <p class="number number-one">1
-                <img class="menu_item_sandwich" src="images/chicken_sandwich.png"
-                  alt="Illustration of a grilled chicken sandwiche depicting two slices of baguette bread encasing a leaf of lattuce and a grilled chicken patty">
-              </p>
-
-              <div class="box-text">
-                <h3>CREATE IT</h3>
-                <p>Choose from a selection of tastilicious toppings to create your own pizza</p>
-              </div>
-
-            </section>
-
-
-            <!-- 2 -->
-            <section class="box-item">
-
-              <p class="number number-two">2
-                <img class="menu_item_sandwich" src="images/chicken_sandwich.png" alt="">
-              </p>
-
-              <div class="box-text">
-                <h3>NAME IT</h3>
-                <p>Choose from a selection of tastilicious toppings to create your own pizza</p>
-              </div>
-
-            </section>
-
-
-            <!-- 3 -->
-            <section class="box-item">
-
-              <p class="number number-three">3
-                <img class="menu_item_sandwich" src="images/chicken_sandwich.png" alt="">
-              </p>
-
-              <div class="box-text">
-                <h3>FAME IT</h3>
-                <p>Choose from a selection of tastilicious toppings to create your own pizza</p>
-              </div>
-
-            </section>
-
-
-          </div>
-        </div>
-
-        <div role="tabpanel" aria-labelledby="drinks" hidden>
-          <div class="box">
-
-            <!-- 1 -->
-            <section class="box-item">
-
-              <p class="number number-one">1
-                <img class="menu_item_soda" src="images/soda-can.png"
-                  alt="Illustration of an opened can of soda that does not display brand name.">
-              </p>
-
-              <div class="box-text">
-                <h3>CREATE IT</h3>
-                <p>Choose from a selection of tastilicious toppings to create your own pizza</p>
-              </div>
-
-            </section>
-
-
-            <!-- 2 -->
-            <section class="box-item">
-
-              <p class="number number-two">2
-                <img class="menu_item_soda" src="images/soda-can.png" alt="">
-              </p>
-
-              <div class="box-text">
-                <h3>NAME IT</h3>
-                <p>Choose from a selection of tastilicious toppings to create your own pizza</p>
-              </div>
-
-            </section>
-
-
-            <!-- 3 -->
-            <section class="box-item">
-
-              <p class="number number-three">3
-                <img class="menu_item_soda" src="images/soda-can.png" alt="">
-              </p>
-
-              <div class="box-text">
-                <h3>FAME IT</h3>
-                <p>Choose from a selection of tastilicious toppings to create your own pizza</p>
-              </div>
-
-            </section>
-
-
-          </div>
-        </div>
-
-
+  
+    </section>
+  
+  
+    <!-- 2 -->
+    <section class="box-item">
+  
+      <p class="number number-two">2
+        <img class="menu_item_sandwich" src="images/chicken_sandwich.png" alt="">
+      </p>
+  
+      <div class="box-text">
+        <h3>NAME IT</h3>
+        <p>Choose from a selection of tastilicious toppings to create your own pizza</p>
       </div>
-
-
-
-      <div class="btn-legend">
-
-        <a href="#">
-          <p>CREATE YOUR LEGEND</p>
-        </a>
-
+  
+    </section>
+  
+  
+    <!-- 3 -->
+    <section class="box-item">
+  
+      <p class="number number-three">3
+        <img class="menu_item_sandwich" src="images/chicken_sandwich.png" alt="">
+      </p>
+  
+      <div class="box-text">
+        <h3>FAME IT</h3>
+        <p>Choose from a selection of tastilicious toppings to create your own pizza</p>
       </div>
-
-
-
-      <div class="btn-legendary">
-        <a href="#">
-          <p>BECOME LEGENDARY</p>
-        </a>
-      </div>
-
+  
+    </section>
+  
+  
+  </div>
+  </div>
+  
+  <div role="tabpanel" aria-labelledby="drinks" hidden>
+    <div class="box">
+    
+      <!-- 1 -->
+      <section class="box-item">
+    
+        <p class="number number-one">1
+          <img class="menu_item_soda" src="images/soda-can.png" alt="Illustration of an opened can of soda that does not display brand name.">
+        </p>
+    
+        <div class="box-text">
+          <h3>CREATE IT</h3>
+          <p>Choose from a selection of tastilicious toppings to create your own pizza</p>
+        </div>
+    
+      </section>
+    
+    
+      <!-- 2 -->
+      <section class="box-item">
+    
+        <p class="number number-two">2
+          <img class="menu_item_soda" src="images/soda-can.png" alt="">
+        </p>
+    
+        <div class="box-text">
+          <h3>NAME IT</h3>
+          <p>Choose from a selection of tastilicious toppings to create your own pizza</p>
+        </div>
+    
+      </section>
+    
+    
+      <!-- 3 -->
+      <section class="box-item">
+    
+        <p class="number number-three">3
+          <img class="menu_item_soda" src="images/soda-can.png" alt="">
+        </p>
+    
+        <div class="box-text">
+          <h3>FAME IT</h3>
+          <p>Choose from a selection of tastilicious toppings to create your own pizza</p>
+        </div>
+    
+      </section>
+    
+    
     </div>
-  </main>
+  </div>
+
+
+</div> 
 
 
 
-  <footer>
-    <div class="footer__inner">
-      <img src="images/logo-footer.png" alt="logo" class="logo">
-      <div class="footer-container">
-        <div class="foot-nav-item">Home</div>
-        <div class="foot-nav-item">Our Mission</div>
-        <div class="foot-nav-item">Location</div>
-        <div class="foot-nav-item">Contact</div>
-      </div>
-      <p>&copy; 2026 Graphic Resources. All rights reserved.</p>
+<div class="btn-legend">
 
+  <a href="#">
+    <p>CREATE YOUR LEGEND</p>
+  </a>
 
-    </div>
+</div>
 
 
 
-  </footer>
+<div class="btn-legendary">
+  <a href="#">
+    <p>BECOME LEGENDARY</p>
+  </a>
+</div>
+  
+</div>
+</main>
 
 
-  <script src="js/tab.js" defer></script>
-  <script src="js/active.js" defer></script>
+
+<footer>
+ <div class="footer__inner">
+  <img src="images/logo-footer.png" alt="logo" class="logo">
+  <div class="footer-container">
+    <div class="foot-nav-item">Home</div>
+    <div class="foot-nav-item">Our Mission</div>
+    <div class="foot-nav-item">Location</div>
+    <div class="foot-nav-item">Contact</div>
+  </div>
+  <p>&copy; 2026 Graphic Resources. All rights reserved.</p>
+
+  
+ </div>
+ 
+
+ 
+</footer>
+
+
+<script src="js/tab.js" defer></script>
+<script src="js/active.js" defer></script>
 
 </body>
-
 </html>
