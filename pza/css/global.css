@@ -79,6 +79,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 0;
+  margin-left: 3px;
 }
 
 .main-nav > li > a {

@@ -1,34 +1,6 @@
+@use 'colors';
+
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
-
-:root {
-
-    /* Primitive Neutrals */
-    --color-primary: #fff;
-    --color-secondary: #d20410;
-    --color-tertiary: #000;
-    --color-quaternary: #040135;
-
-    /* Background */
-    --bg-p: #2a2a2e;
-    --bg-h2: #fde900;
-
-    /* Bottom Card */
-    --class-bc-red: #ff3800;
-    --class-bc-blue: #000108;
-
-    /* H4 */
-    --h4-blue: #020012;
-    --h4-red: #EB000C;
-
-    /* Portfolio, Header-Container, About-Us */
-    --class-port-toggles-gray: #424146;
-    --class-head-container-orange: #D64000;
-    --class-about-us-orange: #ff5100;
-
-    /* Footer */
-    --footer-bg-gray: #020614;
-}
-
 
 * {
     padding: 0;
@@ -55,7 +27,6 @@ div.logo {
     width: 100%;
     max-width: 500px;
 }
-
 
 .logo {
 
@@ -120,7 +91,6 @@ ul {
     opacity: 1;
 }
 
-
 .top-slide {
 
     h2 {
@@ -130,7 +100,7 @@ ul {
         padding: 0 23px;
         padding: 0 23px;
         text-align: left;
-        border: 1.5px solid black;
+        border: 1.5px solid var(color-tertiary);
     }
 
 }
