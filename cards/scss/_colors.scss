@@ -1,0 +1,24 @@
+:root {
+    /* gray */
+    --clr-gray-1: hsl(209, 61%, 16%);
+    --clr-gray-10: hsl(210, 36%, 96%);
+
+    /* black */
+    --clr-black: #222;
+    
+    /* white */
+    --clr-white: #fff;
+    
+    /* font */
+    --ff-primary: "Roboto", sans-serif;
+    --ff-secondary: "Open Sans", sans-serif;
+    
+    /* spacial */
+    --transition: all 0.3s linear;
+    --spacing: 0.1rem;
+    --radius: 0.25rem;
+    
+    /* width */
+    --max-width: 1170px;
+    --fixed-width: 620px;
+}
