@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body> 
+
+<div class="container">
+ <div class="col-md-12 text-center" id="chart">
+  <h1>Decision Tree // Procedural Facilitator</h1>
+   <div class="col-md-10 col-md-offset-1">     
+   <div class="well">
+   <p>Does the child ever function in ways that would be considered age appropriate with regard to this outcome?</p>
+ </div>        
+</div>
+                                                                                                                                                                                                                                                                                                                              
+ <div class="col-md-6  col-xs-6">
+  <div class="btn btn-danger choice" data-alt="ch1Yes" data-current="ch1No">
+    <span>No</span> (consider ratings below)
+  </div>
+ </div>
+      
+                  
+ <div class="col-md-6  col-xs-6">
+  <div class="btn btn-success choice" data-current="ch1Yes" data-alt="ch1No">
+
+
+    <span>Yes</span> (consider ratings below)
+ 
+  </div>
+ </div>
+        
+                
+<div class="clearfix"></div>
+ <div id="ch1No" data-type="result" class="col-md-6 col-xs-12">
+  <div class="">
+    <div class="well">
+      Does the child use any immediate foundational skills related to this outcome upon which to build age appropriate functioning across settings and situations?
+    </div>
+   <div class="col-md-6 col-xs-6"><div class="btn btn-danger choice" data-current="ch5No" data-alt="ch5Yes">No</div>
+</div>
+        
+                                                                
+ <div class="col-md-6 col-xs-6">
+  <div class="btn btn-success choice" data-current="ch5Yes" data-alt="ch5No">Yes</div>
+ </div>
+
+
+ <div id="ch5No" data-type="result" class="col-md-6 col-xs-12 margin10">                                                                         
+  <div data-current="ch6_1" data-alt="ch6_2" class="btn btn-primary choice">
+    Uses skills that are not yet immediate foundational
+  </div>
+     
+  <div id="ch6_1" data-type="result" class="row">
+   <div class="btn btn-primary choice" data-current="ch8_1" data-alt="ch8_2">
+    Uses skills that are not yet immediate foundational
+  </div>
+                        
+                                
+ <div id="ch8_1" data-type="result" class="row">
+    <div class="alert alert-success">Not Yet
+   </div>
+  </div>
+ </div>
+</div>
+     
+                                   
+<div id="ch5Yes" data-type="result" class="col-md-8 col-md-offset-4 col-xs-12 margin10">
+ <div class="well">
+  To what extent is the child using immediate foundational skills across settings and situations?
+</div>
+                    
+                          
+<div class="col-md-6 col-xs-6">
+ <div class="btn btn-primary choice" data-current="ch7_1" data-alt="ch7_2">
+  Occasional use of immediate foundational skills
+</div>
+                       
+                               
+<div id="ch7_1" data-type="result" class="row">
+ <div class="alert alert-success">
+  Between Not Yet and Nearly
+</div>
+
+</div>
+</div>
+
+                                                
+<div class="col-md-6 col-xs-6">
+<div class="btn btn-primary choice" data-alt="ch7_1" data-current="ch7_2">
+  Uses immediate foundational skills most or all of the time across settings and situations
+</div>
+                        
+                              
+<div id="ch7_2" data-type="result" class="row">
+  <div class="alert alert-success">Nearly</div></div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+<div id="ch1Yes" data-type="result" class="col-md-6 col-md-offset-6 col-xs-12">
+ <div class="col-md-12">
+  <div class="well">
+    Is the child's functioning age-appropriate across all or almost all settings and situations
+  </div>
+</div>
+
+                                
+<div class="col-md-6 col-xs-6">
+ <div class="btn btn-danger choice" data-current="ch2No" data-alt="ch2Yes">No</div>
+</div>
+    
+    
+<div class="col-md-6 col-xs-6">
+ <div class="btn btn-success choice" data-current="ch2Yes" data-alt="ch2No">Yes</div>
+</div>
+    
+    
+<div id="ch2No" data-type="result" class="col-md-8 col-xs-12">
+ <div class="well">
+  To What extent is the child's functioning age-appropriate across settings and situations?
+</div>
+    
+                                    
+<div class="col-md-6 col-xs-6">
+ <div class="btn btn-primary choice" data-current="ch4_1" data-alt="ch4_2">
+    Occasional use of age-appropriate skills; more behavior that is not age-appropriate
+ </div>
+                    
+                            
+<div id="ch4_1" data-type="result" class="row">
+ <div class="alert alert-success">Between Nearly and Somewhat</div>
+ </div>
+</div>
+ 
+                                       
+<div class="col-md-6 col-xs-6">
+ <div class="btn btn-primary choice" data-current="ch4_2" data-alt="ch4_1">
+  Uses amix of age-appropriate behaviors and skills across settings
+</div>
+                    
+                            
+<div id="ch4_2" data-type="result" class="row">
+  <div class="alert alert-success">Somewhat
+   </div>
+  </div>
+ </div>
+</div>
+                
+                
+<div id="ch2Yes" class="col-md-8 col-md-offset-4 col-xs-12" data-type="result">  
+ <div class="well">Does anyone have concerns about the child's functioning with regard to the outcome area?</div>
+  <div class="col-md-6 col-xs-6">
+   <div class="btn btn-success choice" data-current="ch3Yes" data-alt="ch3No">Yes</div>
+    <div id="ch3Yes" data-type="result" class="row">
+     
+     <div class="alert alert-success margin10">Between Somewhat and Completely</div>
+    </div>
+   </div>
+                
+                        
+ <div class="col-md-6 col-xs-6">
+   <div class="btn btn-danger choice" data-current="ch3No" data-alt="ch3Yes">No</div>
+     <div id="ch3No" data-type="result" class="row">
+       <div class="alert alert-success margin10">Completely
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+    
+<script src="js/jquery.min.js"></script>  
+<script src="js/script.js"></script>
+
+</body>
+</html>

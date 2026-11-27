@@ -1,0 +1,31 @@
+body{
+background-color: #fff; 
+}
+
+.choice {
+cursor: pointer;
+white-space: normal !important;
+}
+
+.choice span {
+display: block;
+}
+
+.well {
+ background: rgb(227,236,253) !important;
+ border: 0.25px solid rgb(206,222,251) !important;        
+}
+
+.well,
+.margin10 {
+ margin-top: 20px;
+}
+
+.btn-primary {
+ margin-bottom: 10px;
+}
+
+[data-type="result"] {
+    display: none;
+}
+
