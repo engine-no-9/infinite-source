@@ -1,0 +1,47 @@
+:root {
+  /* white / black */
+  --white: #fff;
+  --black: #000;
+  /* orange */
+  --bright-yellow-orange: #feb433;
+  --copper: rgb(195, 127, 41);
+  --warm-ochre: #cc8f42;
+  --honeyed-saffron: rgb(223, 162, 84);
+  /* gray */
+  --dark-gray: rgb(169, 169, 169);
+  /* blue */
+  --cornflower-blue: rgb(100, 149, 237);
+}
+
+body {
+  background-color: var(--bright-yellow-orange);
+}
+
+input::placeholder {
+  color: var(--black);
+}
+
+a {
+  color: var(--warm-ochre);
+}
+
+footer.footer {
+  margin-left: 13%;
+  color: var(--black);
+  width: 75%;
+  font-size: 1.5em;
+  border-color: var(--dark-gray);
+}
+
+ul#names {
+  border: 1.5px dashed var(--honeyed-saffron);
+}
+
+li.collection-footer {
+  border: 1px solid var(--white);
+  background-color: var(--white);
+  height: 50px;
+  color: var(--cornflower-blue);
+}
+
+/*# sourceMappingURL=style.css.map */
